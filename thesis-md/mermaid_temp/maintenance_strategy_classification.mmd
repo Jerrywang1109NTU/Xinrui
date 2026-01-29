@@ -1,0 +1,22 @@
+flowchart TD
+    Root[高压开关柜维护策略]
+    
+    S1[事后维修 CM]
+    S2[预防性维修 PM]
+    S3[状态维修 CBM]
+    
+    Root --> S1
+    Root --> S2
+    Root --> S3
+    
+    S1 --- D1[故障后处理<br>被动响应]
+    S2 --- D2[基于时间周期<br>定期检修]
+    S3 --- D3[基于设备状态<br>主动预测]
+    
+    style Root fill:#eee,stroke:#000,stroke-width:2px
+    style S1 fill:#fff,stroke:#000
+    style S2 fill:#fff,stroke:#000
+    style S3 fill:#fff,stroke:#000
+    style D1 fill:#fff,stroke:#000,stroke-dasharray: 5 5
+    style D2 fill:#fff,stroke:#000,stroke-dasharray: 5 5
+    style D3 fill:#fff,stroke:#000,stroke-dasharray: 5 5

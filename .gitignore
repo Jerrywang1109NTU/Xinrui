@@ -1,0 +1,47 @@
+# LaTeX编译产生的临时文件
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# LaTeX编译产物
+*.pdf
+*.dvi
+*.ps
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# Python相关（如果以后用到）
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# IDE文件
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 临时文件夹
+tmp/
+temp/

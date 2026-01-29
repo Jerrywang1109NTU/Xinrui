@@ -1,0 +1,41 @@
+flowchart TB
+    Root[研究成果总结]
+    
+    subgraph P1 [故障机理分析]
+        direction TB
+        A1[触头过热机制]
+        A2[绝缘劣化模型]
+        A3[机械与电气联动]
+    end
+    
+    subgraph P2 [监测系统设计]
+        direction TB
+        B1[多源传感器融合]
+        B2[分层分布式架构]
+        B3[抗干扰通信设计]
+    end
+    
+    subgraph P3 [维护策略优化]
+        direction TB
+        C1[状态综合评估]
+        C2[风险分级预警]
+        C3[差异化维护决策]
+    end
+    
+    Root --> P1
+    Root --> P2
+    Root --> P3
+    
+    style Root fill:#eee,stroke:#000,stroke-width:2px
+    style P1 fill:#fff,stroke:#000
+    style P2 fill:#fff,stroke:#000
+    style P3 fill:#fff,stroke:#000
+    style A1 fill:#fff,stroke:#000
+    style A2 fill:#fff,stroke:#000
+    style A3 fill:#fff,stroke:#000
+    style B1 fill:#fff,stroke:#000
+    style B2 fill:#fff,stroke:#000
+    style B3 fill:#fff,stroke:#000
+    style C1 fill:#fff,stroke:#000
+    style C2 fill:#fff,stroke:#000
+    style C3 fill:#fff,stroke:#000

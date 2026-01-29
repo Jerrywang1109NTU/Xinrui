@@ -1,0 +1,19 @@
+flowchart TB
+    subgraph Cabinet [高压开关柜结构]
+        direction TB
+        subgraph Upper [上部隔室]
+            direction LR
+            A[仪表室<br>继电保护装置] --- B[母线室<br>主母线]
+        end
+        C[断路器室<br>真空断路器]
+        D[电缆室<br>电缆终端 & 互感器]
+        
+        Upper --- C
+        C --- D
+    end
+    style Cabinet fill:#fff,stroke:#000,stroke-width:2px
+    style Upper fill:#fff,stroke:#000,stroke-dasharray: 5 5
+    style A fill:#fff,stroke:#000
+    style B fill:#fff,stroke:#000
+    style C fill:#fff,stroke:#000
+    style D fill:#fff,stroke:#000

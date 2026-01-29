@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{indentfirst}
+\usepackage{setspace}
+
+% 设置字体为宋体
+\setmainfont{Times New Roman}
+\setCJKmainfont{STSong}
+
+% 设置全局行间距为25磅（约1.0倍行距）
+\linespread{1.0}
+
+% 设置首行缩进2字符
+\setlength{\parindent}{2em}
+
+% Packages
+\usepackage{geometry}
+\geometry{left=2.6cm,right=2.8cm,top=3cm,bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+% 设置标题格式
+\titleformat{\section}{\centering\Large\bfseries}{}{0em}{}  % 一级标题：四号宋体加粗居中
+\titleformat{\subsection}{\bfseries}{}{0em}{}  % 二级标题：小四号宋体加粗
+\titleformat{\subsubsection}{\bfseries}{}{0em}{}  % 三级标题：小四号宋体加粗
+
+% 设置标题间距
+\titlespacing{\section}{0pt}{0.5\baselineskip}{0.5\baselineskip}
+\titlespacing{\subsection}{0pt}{0.5\baselineskip}{0.5\baselineskip}
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{caption}
+
+% Setup hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={城市轨道交通变电所高压开关柜在线监测技术的应用与维护策略分析},
+    pdfauthor={况欣睿},
+}
+
+% Customize Chapter formatting
+\titleformat{\chapter}{\centering\Huge\bfseries}{第\chinese{chapter}章}{1em}{}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{重慶工信職業學院毕业设计（论文）}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+
+% ------------------ Cover Page ------------------
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\Huge \textbf{重慶工信職業學院} \par}
+    \vspace{0.5cm}
+    {\Large \textbf{CHONG QING INDUSTRY AND INFORMATION VOCATIONAL COLLEGE} \par}
+
+    \vspace{3cm}
+
+    {\Huge \textbf{城市轨道交通变电所高压开关柜} \par}
+    {\Huge \textbf{在线监测技术的应用与维护策略分析} \par}
+
+    \vspace{4cm}
+
+    \begin{large}
+        \begin{tabular}{rl}
+            \textbf{学院名称:} & 轨道交通学院 \\
+            \textbf{专业名称:} & 高速铁路维修技术 \\
+            \textbf{学生姓名:} & 王子超 \\
+            \textbf{学号:}   & 2022010400756 \\
+            \textbf{指导教师:} & 孙乾坤 \\
+        \end{tabular}
+    \end{large}
+
+    \vspace{3cm}
+
+    {\Large \textbf{二○二五年十二月十五日} \par}
+
+\end{titlepage}
+
+% ------------------ Abstract ------------------
+\section*{摘要}
+\addcontentsline{toc}{section}{摘要}
+
+\input{chapters/abstract}
+
+% ------------------ Table of Contents ------------------
+\tableofcontents
+\clearpage
+
+% ------------------ Main Chapters ------------------
+\input{chapters/01_introduction}
+\input{chapters/02_online_monitoring}
+\input{chapters/03_maintenance_strategy}
+\input{chapters/04_integration_validation}
+\input{chapters/05_conclusion}
+
+% ------------------ References ------------------
+\input{bibliography}
+
+\end{document}

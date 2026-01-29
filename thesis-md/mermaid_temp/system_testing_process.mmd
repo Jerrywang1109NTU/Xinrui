@@ -1,0 +1,16 @@
+flowchart LR
+    Start([开始])
+    T1[单元测试<br>Unit Test]
+    T2[集成测试<br>Integration Test]
+    T3[系统测试<br>System Test]
+    T4[验收测试<br>Acceptance Test]
+    End([结束])
+    
+    Start --> T1 --> T2 --> T3 --> T4 --> End
+    
+    style Start fill:#fff,stroke:#000
+    style End fill:#fff,stroke:#000
+    style T1 fill:#fff,stroke:#000
+    style T2 fill:#fff,stroke:#000
+    style T3 fill:#fff,stroke:#000
+    style T4 fill:#fff,stroke:#000

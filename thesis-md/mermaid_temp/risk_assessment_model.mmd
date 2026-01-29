@@ -1,0 +1,27 @@
+flowchart LR
+    subgraph Inputs [输入层]
+        In1[传感器数据]
+        In2[环境参数]
+        In3[历史记录]
+    end
+    
+    Process[风险计算矩阵<br>概率 x 后果严重程度]
+    
+    subgraph Outputs [输出层]
+        Out1((高风险))
+        Out2((中风险))
+        Out3((低风险))
+    end
+    
+    Inputs --> Process
+    Process --> Outputs
+    
+    style Inputs fill:#fff,stroke:#000
+    style Process fill:#fff,stroke:#000,stroke-width:2px
+    style Outputs fill:#fff,stroke:#000
+    style In1 fill:#fff,stroke:#000
+    style In2 fill:#fff,stroke:#000
+    style In3 fill:#fff,stroke:#000
+    style Out1 fill:#fff,stroke:#000
+    style Out2 fill:#fff,stroke:#000
+    style Out3 fill:#fff,stroke:#000
